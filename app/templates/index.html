@@ -15,4 +15,17 @@
         
     </ul>
 <h1>Articles</h1>
+<ul>
+    {% for articles in id_articles %}
+        <li><h2>Name:{{ articles.name}}</li></h2>
+        <li>author:{{ articles.author}}</li>
+        <li>title :{{articles.title}}</li>
+        <li><a href="{{articles.url}}">Url</a></li>
+        <li><a href = "{{articles.urlToImage}}">urlToImage</a></li>
+        <li>publicedAt:{{ articles.publiceAt}}</li>
+       
+          
+    {% endfor %}
+    
+</ul>
 </body> 
