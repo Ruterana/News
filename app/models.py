@@ -16,7 +16,7 @@ class Articles:
     '''
     newsArticle class to define news oblects
     '''
-    def __init__(self,id,name,author,title,description,url,urlToImage,publicedAt,content)
+    def __init__(self,id,name,author,title,description,url,urlToImage,publicedAt,content):
          self.id = id
          self.name = name
          self.author = author
