@@ -11,4 +11,9 @@ class Sources:
         self.category = category
         self.language = language
         self.country = country
-       
+#####for articles#############
+# class Articles:
+#     '''
+#     newsArticle class to define news oblects
+#     '''
+#     def __init__
