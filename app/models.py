@@ -3,7 +3,7 @@ class Sources:
     newssource class to define news Objects
     '''
 
-    def __init__(self, id,name,description,url,category,languange,country):
+    def __init__(self, id,name,description,url,category,language,country):
         self.id = id
         self.name = name
         self.description = description
