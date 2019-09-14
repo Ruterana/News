@@ -57,7 +57,7 @@ def process_results(sources_list):
             sources_results.append(sources_object)
 
     return sources_results
-def get_articles(id):
+def get_articles(source):
     '''
     Function that gets the json response to our url request
     '''
@@ -96,9 +96,10 @@ def Proces_results(articles_list):
         url = articles_item.get('url')
         urlToImage = articles_item.get('urlToImage')
         publicedAt = articles_item.get('publicedAt')
-        content = articles_item.get('content')
-        if name:
-            articles_object = Sources(id,name,author,title,description,url,urlToImage,publicedAt,content)
-            articles_results.append(articles_object)
 
-    return articles_results
+        if date and author and image:
+           articles_object = Article(author,title,description,url,image,data)
+           articles_append(article_object)
+
+        return articles_list
+
