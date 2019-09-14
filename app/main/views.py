@@ -15,7 +15,7 @@ def index():
     title = 'Welcome to The news resources '
     return render_template('index.html', title = title, category_sources = category_sources)
     
-@main.route('/articles/<id>')
+@main.route('/articles/<int:id>')
 def articles(id):
     '''
     view root page  function that returns the category page and its data
