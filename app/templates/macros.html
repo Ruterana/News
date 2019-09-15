@@ -1,5 +1,5 @@
- <!-- {% macro displaysourcesList(sources_list) %}
-<div class="row">
+ {% macro displaysourcesList(sources_list) %}
+<!-- <div class="row"> -->
    {% for sources in category_sources%}
   
               {{ source.description }}
@@ -9,13 +9,13 @@
               {{ sources.country}}
               <a href="{{sources.url}}">Url</a> 
       
-           <li class="text-center">
+           <!-- <li class="text-center">
                  
                    <a href="{{url_for('main.articles', id=source.id)}}">
                    {{ sources.name|truncate(10)}}</a>
-               </li>
+               </li> -->
        
-       </div>
+       <!-- </div> -->
    {% endfor %}
-</div>
-{% endmacro %}  -->
+<!-- </div> -->
+{% endmacro %} 
