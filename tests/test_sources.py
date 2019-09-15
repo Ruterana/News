@@ -1,16 +1,16 @@
 import unittest
-from app.models import sources
+from app.models import Sources
 
-class MovieTest(unittest.TestCase):
+class SourcesTest(unittest.TestCase):
     '''
-    Test Class to test the behaviour of the Movie class
+    Test Class to test the behaviour of the Sources class
     '''
 
     def setUp(self):
         '''
         Set up method that will run before every Test
         '''
-        self.new_sources = Sources('abc-news','ABC News','Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.',"https://abcnews.go.com',general)
+        self.new_sources = Sources(id,name,description,url,category,language,country)
 
-    def test_instance(self):
-        self.assertTrue(isinstance(self.new_movie,Movie))
+    def test_instant(self):
+        self.assertTrue(isinstant(self.new_sources,Sources))
