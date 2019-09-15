@@ -1,10 +1,14 @@
-{% macro displayNewsList(news_list) %}
+ {% macro displaysourcesList(sources_list) %}
 <div class="row">
-   {% for news in news_list%}
-   <div class="col-md-3  News-card">
-       <p>
+   {% for sources in category_sources%}
+  
               {{ source.description }}
-       </p>
+              {{source.name}}
+              {{ sources.category}}
+              {{ sources.language}}
+              {{ sources.country}}
+              <a href="{{sources.url}}">Url</a> 
+      
            <li class="text-center">
                  
                    <a href="{{url_for('main.articles', id=source.id)}}">
@@ -14,4 +18,4 @@
        </div>
    {% endfor %}
 </div>
-{% endmacro %}
+{% endmacro %} 

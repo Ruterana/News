@@ -1,0 +1,16 @@
+</body>
+<h1>Articles</h1>
+<ul>
+    {% for article in articles %}
+        <li><h2>Name:{{ article.name}}{{id}}</li></h2>
+        <li>author:{{ article.author}}{{id}}</li>
+        <li>title :{{article.title}}{{id}}</li>
+        <li><a href="{{article.url}}">Url</a></li>
+        <li><a href = "{{article.urlToImage}}">urlToImage</a></li>
+        <li>publicedAt:{{ article.publiceAt}}</li>
+       
+          
+    {% endfor %}
+    
+</ul>
+</body> 
